@@ -9,7 +9,7 @@
   width: 80px;
   border-radius: 40px;
   overflow: hidden; 
-  background-color: white !important;
+  background-color: white;
   cursor: pointer;
   transition: border-radius ease-out 0.15s;
   background-position: center center;
@@ -37,13 +37,14 @@
 
 #icon_container {
   position: absolute;
+  display: flex;
   height: 190px;
   width: 300px;
-  top: calc(50% - (200px/2));
+  top: calc(50% - (170px/2));
   left: calc(50% - (300px/2));
   z-index: 2;
   opacity: 0;
-  transition: bottom ease 0.5s, opacity ease 0.5s; 
+  transition: top ease 0.5s, opacity ease 0.5s; 
 }
 
 #gradient {
@@ -72,13 +73,15 @@
 #logo {
   position: absolute;
   width: 150px;
-  height: 50px; !important
+  height: 50px;
   left: 0px;
   top: 15px;
   z-index: 5;
   background-image: url(resources/icon_name_white_on_alpha.png);
   background-size: cover;
   background-position: center center;
+  opacity: 0;
+  transition: opacity ease 0.5s;
 }
 
 #icon_1 {
